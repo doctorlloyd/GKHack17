@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true"
+    android:layout_height="match_parent">
 
-    <TableRow
-        android:id="@+id/display_raw_skills"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="280dip" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
-    <TableRow
-        android:id="@+id/display_raw_interest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="280dip" />
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSubmitCustom"
-        android:text="Submit" />
-</TableLayout>
+            <TableRow
+            android:id="@+id/display_raw_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="280dip" />
+
+            <!--<TableRow-->
+            <!--android:id="@+id/display_raw_interest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="280dip" />-->
+        </TableLayout>
+        <Button
+            android:id="@+id/btnSubmitCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

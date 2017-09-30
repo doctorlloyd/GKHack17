@@ -131,7 +131,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.fab3:
                 //Meet Colleagues
-                startActivity(new Intent(getBaseContext(),CostumeMeetings.class));
+                startActivity(new Intent(getBaseContext(),Recommended.class));
                 finish();
                 break;
             case R.id.fab4:
