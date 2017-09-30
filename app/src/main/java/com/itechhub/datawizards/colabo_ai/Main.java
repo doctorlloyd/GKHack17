@@ -1,6 +1,7 @@
 package com.itechhub.datawizards.colabo_ai;
 
 import android.animation.Animator;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -120,19 +121,23 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.fab1:
             //Profile
-
+                startActivity(new Intent(getBaseContext(),Profile.class));
+                finish();
                 break;
             case R.id.fab2:
             //Projects
-
+                startActivity(new Intent(getBaseContext(),Projects.class));
+                finish();
                 break;
             case R.id.fab3:
                 //Meet Colleagues
-
+                startActivity(new Intent(getBaseContext(),CostumeMeetings.class));
+                finish();
                 break;
             case R.id.fab4:
             //Colleagues Meeting
-
+                startActivity(new Intent(getBaseContext(),ColleaguesMeeting.class));
+                finish();
                 break;
             default:
                 break;
