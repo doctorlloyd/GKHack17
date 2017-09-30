@@ -29,8 +29,8 @@ public class Recommended extends AppCompatActivity implements AdapterView.OnItem
 
         //
         arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,mettings);
-        listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(this);
+        //listView.setAdapter(arrayAdapter);
+        //listView.setOnItemClickListener(this);
         costumeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

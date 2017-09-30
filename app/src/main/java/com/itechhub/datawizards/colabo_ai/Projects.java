@@ -29,8 +29,8 @@ public class Projects extends AppCompatActivity implements AdapterView.OnItemCli
 
         //
         arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,projectsAssigned);
-        listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(this);
+        //listView.setAdapter(arrayAdapter);
+        //listView.setOnItemClickListener(this);
     }
 
     @Override

@@ -3,34 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center|end"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context="com.itechhub.datawizards.colabo_ai.Login">
 
-        <EditText
-            android:gravity="center"
-            android:hint="Enter Username"
-            android:id="@+id/etLogin_Email"
-            android:inputType="textEmailAddress"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:layout_width="wrap_content"/>
+    <EditText
+        android:id="@+id/etLogin_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
 
-        <EditText
-            android:gravity="center"
-            android:hint="Enter Password"
-            android:id="@+id/etLogin_Password"
-            android:inputType="textPassword"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+    <EditText
+        android:id="@+id/etLogin_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/login_Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginLeft="84dp"
         android:layout_marginRight="84dp"
         android:layout_marginTop="2dp"

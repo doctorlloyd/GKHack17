@@ -18,12 +18,23 @@
         </activity>
         <activity
             android:name=".Main"
+            android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Projects" />
-        <activity android:name=".ColleaguesMeeting" />
-        <activity android:name=".CostumeMeetings" />
-        <activity android:name=".Recommended"></activity>
+        <activity
+            android:name=".Profile"
+            android:label="Profile" />
+        <activity
+            android:name=".Projects"
+            android:label="Home" />
+        <activity
+            android:name=".ColleaguesMeeting"
+            android:label="Home" />
+        <activity
+            android:name=".CostumeMeetings"
+            android:label="Choose Colleague" />
+        <activity
+            android:name=".Recommended"
+            android:label="Recommended Colleagues" />
     </application>
 
 </manifest>

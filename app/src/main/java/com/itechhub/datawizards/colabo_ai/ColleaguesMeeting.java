@@ -27,8 +27,8 @@ public class ColleaguesMeeting extends AppCompatActivity implements AdapterView.
 
         //
         arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,mettings);
-        listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(this);
+        //listView.setAdapter(arrayAdapter);
+        //listView.setOnItemClickListener(this);
     }
 
     @Override
