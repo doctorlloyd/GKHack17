@@ -13,24 +13,25 @@ import java.util.ArrayList;
 
 public class Recommended extends AppCompatActivity implements AdapterView.OnItemClickListener{
     private ArrayAdapter<String> arrayAdapter;
-    ArrayList<String> mettings = new ArrayList<>();
+    ArrayList<String> suggestedColleagues = new ArrayList<>();
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.projects_recommended);
         initialize();
-
     }
     void initialize(){
-        listView = (ListView) findViewById(R.id.project_list_view);
+        listView = (ListView) findViewById(R.id.view_recommended_meetings);
         FloatingActionButton costumeButton = (FloatingActionButton) findViewById(R.id.costumeFab);
         //TODO get data an generate String Array
-
+        suggestedColleagues.add("Asive can help you with your Django project, please try to make an appointment with him");
+        suggestedColleagues.add("Asive can help you with your Django project, please try to make an appointment with him");
+        suggestedColleagues.add("Asive can help you with your Django project, please try to make an appointment with him");
         //
-        arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,mettings);
-        //listView.setAdapter(arrayAdapter);
-        //listView.setOnItemClickListener(this);
+        arrayAdapter = new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,suggestedColleagues);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(this);
         costumeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

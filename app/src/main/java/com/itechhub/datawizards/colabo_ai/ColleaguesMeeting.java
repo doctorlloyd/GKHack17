@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class ColleaguesMeeting extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ArrayAdapter<String> arrayAdapter;
-    ArrayList<String> mettings = new ArrayList<>();
+    ArrayList<String> meetings = new ArrayList<>();
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,15 @@ public class ColleaguesMeeting extends AppCompatActivity implements AdapterView.
         initialize();
     }
     void initialize(){
-        listView = (ListView) findViewById(R.id.project_list_view);
+        listView = (ListView) findViewById(R.id.meetings_list_view);
 
         //TODO get data an generate String Array
-
+        meetings.add("Mabu, is having a meeting with Lero at 12:30 pm on the 21st of October");
+        meetings.add("Asive and Msamiro they are having a meeting now...");
         //
-        arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,mettings);
-        //listView.setAdapter(arrayAdapter);
-        //listView.setOnItemClickListener(this);
+        arrayAdapter = new ArrayAdapter<>(getBaseContext(),android.R.layout.simple_list_item_1,meetings);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(this);
     }
 
     @Override

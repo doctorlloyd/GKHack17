@@ -26,11 +26,14 @@ public class Projects extends AppCompatActivity implements AdapterView.OnItemCli
         listView = (ListView) findViewById(R.id.project_list_view);
 
         //TODO get data an generate String Array
-
+        projectsAssigned.add("Technical support team are changing the company computers and they will be " +
+                "upgrading the company network from next week. You are recommended to join the group");
+        projectsAssigned.add("Data Wizards are starting a project on the the 18th of November, 2017." +
+                "You are recommended to join the group");
         //
-        arrayAdapter = new ArrayAdapter<String>(getBaseContext(),R.layout.projects_recommended,projectsAssigned);
-        //listView.setAdapter(arrayAdapter);
-        //listView.setOnItemClickListener(this);
+        arrayAdapter = new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,projectsAssigned);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(this);
     }
 
     @Override
